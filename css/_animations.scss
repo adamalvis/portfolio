@@ -1,0 +1,53 @@
+// animation triggers
+.cssanimations {
+    header {
+        .container {
+            h1 {
+                @include opacity(0);
+                @include animation(1s, 1s, loadLogo);
+
+                &:before {
+                    width: 0px;
+                    @include animation(2s, 0.8s, loadLogoLine);
+                }
+            }
+
+            p {
+                @include opacity(0);
+                @include animation(2.5s, 1s, loadTagLine);
+            }
+        }
+    }
+}
+
+// animations
+@include keyframe(loadLogo) {
+    0% {
+        @include transform(scale(1.2));
+        @include opacity(0);
+    }
+    100% {
+        @include transform(scale(1));
+        @include opacity(1);
+    }
+}
+
+@include keyframe(loadLogoLine) {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 300px;
+    }
+}
+
+@include keyframe(loadTagLine) {
+    0% {
+        @include opacity(0);
+        top: 20px;
+    }
+    100% {
+        @include opacity(1);
+        top: 0px;
+    }
+}

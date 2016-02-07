@@ -1,0 +1,410 @@
+.cssanimations header .container h1 {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: loadLogo;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: loadLogo;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1s;
+  -o-animation-duration: 1s;
+  -o-animation-name: loadLogo;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-name: loadLogo;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+}
+.cssanimations header .container h1:before {
+  width: 0px;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-name: loadLogoLine;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 2s;
+  -moz-animation-duration: 0.8s;
+  -moz-animation-name: loadLogoLine;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 2s;
+  -o-animation-duration: 0.8s;
+  -o-animation-name: loadLogoLine;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 2s;
+  animation-duration: 0.8s;
+  animation-name: loadLogoLine;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+}
+.cssanimations header .container p {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: loadTagLine;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 2.5s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: loadTagLine;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 2.5s;
+  -o-animation-duration: 1s;
+  -o-animation-name: loadTagLine;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  animation-name: loadTagLine;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+}
+
+@-webkit-keyframes loadLogo {
+  0% {
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+@-moz-keyframes loadLogo {
+  0% {
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+@-o-keyframes loadLogo {
+  0% {
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+@keyframes loadLogo {
+  0% {
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+@-webkit-keyframes loadLogoLine {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 300px;
+  }
+}
+@-moz-keyframes loadLogoLine {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 300px;
+  }
+}
+@-o-keyframes loadLogoLine {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 300px;
+  }
+}
+@keyframes loadLogoLine {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 300px;
+  }
+}
+@-webkit-keyframes loadTagLine {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    top: 20px;
+  }
+
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 0px;
+  }
+}
+@-moz-keyframes loadTagLine {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    top: 20px;
+  }
+
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 0px;
+  }
+}
+@-o-keyframes loadTagLine {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    top: 20px;
+  }
+
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 0px;
+  }
+}
+@keyframes loadTagLine {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    top: 20px;
+  }
+
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 0px;
+  }
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: url("../images/tampa-background.jpg");
+  background-size: cover;
+  width: 100%;
+  -moz-transition: left 0.3s;
+  -o-transition: left 0.3s;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
+}
+.wrapper:before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+}
+
+.wrapper.open {
+  left: -350px;
+}
+
+header {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+header .container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+header .container h1 {
+  display: inline-block;
+  font-weight: 600;
+}
+header .container h1 span {
+  font-weight: 300;
+}
+header .container h1:before {
+  content: '';
+  width: 300px;
+  height: 1px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #eee;
+}
+header .container p {
+  color: #fff;
+  font-size: 16pt;
+  position: relative;
+  top: 0px;
+}
+
+a.menu-icon {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: #527ecc;
+  color: #fff;
+  z-index: 999;
+  font-size: 30pt;
+  line-height: 100%;
+  text-align: center;
+  -moz-transition: right 0.3s;
+  -o-transition: right 0.3s;
+  -webkit-transition: right 0.3s;
+  transition: right 0.3s;
+}
+a.menu-icon:hover {
+  background: #799cd7;
+  text-decoration: none;
+}
+a.menu-icon:hover:before {
+  border-right-color: #799cd7;
+}
+a.menu-icon:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 50px solid #527ecc;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -moz-transform: translate(-100%, -50%);
+  -o-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  display: none;
+}
+
+a.menu-icon.open {
+  right: 350px;
+  outline: none;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 350px;
+  height: 100%;
+  background: #7189b2;
+  overflow: hidden;
+  z-index: -2;
+}
+nav:before {
+  display: none;
+  width: 100%;
+  height: 150%;
+  top: -100px;
+  left: 200px;
+  position: absolute;
+  content: '';
+  background: #fff;
+  opacity: 0.03;
+  filter: alpha(opacity=3);
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+nav ul {
+  margin-top: 70px;
+}
+nav ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+nav ul li a {
+  font-size: 20pt;
+  color: #fff;
+}
+
+.container h1 {
+  position: relative;
+  color: #fff;
+  font-size: 65pt;
+}
