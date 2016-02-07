@@ -1,7 +1,9 @@
 var AA = (function ($, module) {
 
     var menuIcon = $('.menu-icon'),
-        wrapper = $('.wrapper');
+        nav = $('nav'),
+        navLink = $('nav ul li a'),
+        allPages = $('.page');
 
     registerEvents();
 
@@ -9,19 +11,58 @@ var AA = (function ($, module) {
 
         menuIcon.click(function (e) {
             e.preventDefault();
-            toggleNavigation( $(this) );
+            toggleNavigation();
+        });
+
+        navLink.click(function (e) {
+            e.preventDefault();
+            loadPage($(this).attr('href'));
+            toggleNavigation();
         });
 
     }
 
-    function toggleNavigation ( btn ) {
-        if( !btn.hasClass('open') ) {
-            btn.addClass('open');
-            wrapper.addClass('open');
+    function toggleNavigation () {
+        if( !menuIcon.hasClass('open') ) {
+            openNavigation(); 
         } else {
-            btn.removeClass('open');
-            wrapper.removeClass('open');
+            closeNavigation();
         }
+    }
+
+    function openNavigation () {
+        menuIcon.addClass('open');
+        nav
+            .css({display: 'block'})
+            .delay(50)
+            .queue(function (next) {
+                nav.addClass('open');
+                next();
+            });
+    }
+
+    function closeNavigation () {
+        menuIcon.removeClass('open');
+        nav
+            .removeClass('open')
+            .delay(500)
+            .queue(function (next) {
+                nav.css({display: 'none'});
+                next();
+            });
+    }
+
+    function loadPage (page) {
+        hideActivePage();
+        $(page).addClass('loaded');
+    }
+
+    function hideActivePage (page) {
+        allPages.each(function () {
+            if ( $(this).hasClass('loaded') ) {
+                $(this).removeClass('loaded');
+            }
+        });
     }
 
     return module;
